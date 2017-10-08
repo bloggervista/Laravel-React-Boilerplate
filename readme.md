@@ -6,7 +6,7 @@
     Only Support for LTS and latest stable version of laravel framework
 
 # Licence
-You're free to use this package (it's MIT-licensed), but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
+You're free to use this package (it's MIT-licensed), but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning this repo name.
 
 My address is: Kathmandu University Boys Hostel(KUBH) Dhulikhel, Kavrepalanchowk, Nepal
 
