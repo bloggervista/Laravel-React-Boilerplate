@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1f66f6b669cdff721cb50bdb6087f5a",
+    "content-hash": "9ecf07493e3ca91f00810e5fe306f408",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -72,6 +72,72 @@
             "time": "2017-08-31T16:18:24+00:00"
         },
         {
+            "name": "arcanedev/no-captcha",
+            "version": "5.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ARCANEDEV/noCAPTCHA.git",
+                "reference": "c02d7f1ef25d281f304b9af460a13f4601bbc44c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ARCANEDEV/noCAPTCHA/zipball/c02d7f1ef25d281f304b9af460a13f4601bbc44c",
+                "reference": "c02d7f1ef25d281f304b9af460a13f4601bbc44c",
+                "shasum": ""
+            },
+            "require": {
+                "arcanedev/support": "~4.0",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=7.0",
+                "psr/http-message": "~1.0"
+            },
+            "require-dev": {
+                "arcanedev/laravel-html": "~5.0",
+                "phpunit/phpcov": "~4.0",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Arcanedev\\NoCaptcha\\NoCaptchaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Captcha": "Arcanedev\\NoCaptcha\\Facades\\NoCaptcha"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Arcanedev\\NoCaptcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ARCANEDEV",
+                    "email": "arcanedev.maroc@gmail.com",
+                    "homepage": "https://github.com/arcanedev-maroc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "No CAPTCHA (new Google reCAPTCHA) with Laravel support",
+            "homepage": "https://github.com/ARCANEDEV/noCAPTCHA",
+            "keywords": [
+                "arcanedev",
+                "captcha",
+                "google",
+                "laravel",
+                "no-captcha",
+                "recaptcha"
+            ],
+            "time": "2017-09-08T13:38:56+00:00"
+        },
+        {
             "name": "arcanedev/support",
             "version": "4.2.1",
             "source": {
@@ -125,6 +191,67 @@
                 "support"
             ],
             "time": "2017-09-07T16:25:53+00:00"
+        },
+        {
+            "name": "barryvdh/laravel-snappy",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-snappy.git",
+                "reference": "f08c7e5b4ddea585bfcd48ab4f40f920e58dd1cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-snappy/zipball/f08c7e5b4ddea585bfcd48ab4f40f920e58dd1cf",
+                "reference": "f08c7e5b4ddea585bfcd48ab4f40f920e58dd1cf",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "5.0.x|5.1.x|5.2.x|5.3.x|5.4.x|5.5.x",
+                "illuminate/support": "5.0.x|5.1.x|5.2.x|5.3.x|5.4.x|5.5.x",
+                "knplabs/knp-snappy": "*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Snappy\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "PDF": "Barryvdh\\Snappy\\Facades\\SnappyPdf",
+                        "SnappyImage": "Barryvdh\\Snappy\\Facades\\SnappyImage"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Snappy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Snappy PDF/Image for Laravel 4",
+            "keywords": [
+                "image",
+                "laravel",
+                "pdf",
+                "snappy",
+                "wkhtmltoimage",
+                "wkhtmltopdf"
+            ],
+            "time": "2017-08-14T06:48:50+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -961,6 +1088,72 @@
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
+            "name": "knplabs/knp-snappy",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/snappy.git",
+                "reference": "e6a29846ca759ea268a1bca4455b8a14815a3976"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/snappy/zipball/e6a29846ca759ea268a1bca4455b8a14815a3976",
+                "reference": "e6a29846ca759ea268a1bca4455b8a14815a3976",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "psr/log": "^1.0",
+                "symfony/process": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7"
+            },
+            "suggest": {
+                "h4cc/wkhtmltoimage-amd64": "Provides wkhtmltoimage-amd64 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "h4cc/wkhtmltoimage-i386": "Provides wkhtmltoimage-i386 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "h4cc/wkhtmltopdf-amd64": "Provides wkhtmltopdf-amd64 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "h4cc/wkhtmltopdf-i386": "Provides wkhtmltopdf-i386 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "wemersonjanuario/wkhtmltopdf-windows": "Provides wkhtmltopdf executable for Windows, use version `~0.12` as dependency"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Snappy\\": "src/Knp/Snappy"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/snappy/contributors"
+                }
+            ],
+            "description": "PHP5 library allowing thumbnail, snapshot or PDF generation from a url or a html page. Wrapper for wkhtmltopdf/wkhtmltoimage.",
+            "homepage": "http://github.com/KnpLabs/snappy",
+            "keywords": [
+                "knp",
+                "knplabs",
+                "pdf",
+                "snapshot",
+                "thumbnail",
+                "wkhtmltopdf"
+            ],
+            "time": "2017-10-04T19:39:41+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v5.5.14",
             "source": {
@@ -1588,6 +1781,75 @@
                 "php"
             ],
             "time": "2017-09-02T17:10:46+00:00"
+        },
+        {
+            "name": "nwidart/laravel-modules",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nWidart/laravel-modules.git",
+                "reference": "f9144a085020b0e7e029001718405a131a49ed99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/f9144a085020b0e7e029001718405a131a49ed99",
+                "reference": "f9144a085020b0e7e029001718405a131a49ed99",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.7",
+                "laravel/framework": "5.5.*",
+                "mockery/mockery": "~0.9",
+                "orchestra/testbench": "^3.5",
+                "phpunit/phpunit": "~6.0",
+                "spatie/phpunit-snapshot-assertions": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nwidart\\Modules\\LaravelModulesServiceProvider"
+                    ],
+                    "aliases": {
+                        "Module": "Nwidart\\Modules\\Facades\\Module"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nwidart\\Modules\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "n.widart@gmail.com",
+                    "homepage": "https://nicolaswidart.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Module management",
+            "keywords": [
+                "laravel",
+                "module",
+                "modules",
+                "nwidart",
+                "rad"
+            ],
+            "time": "2017-10-03T12:00:52+00:00"
         },
         {
             "name": "paragonie/random_compat",
